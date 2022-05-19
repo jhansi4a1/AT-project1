@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="1" hostname="user-PC" name="pytest" skipped="0" tests="1" time="13.968" timestamp="2022-05-19T18:35:06.754271"><testcase classname="test_project" name="test_project" time="5.933"><failure message="AssertionError: assert None == 'https://www.zenclass.in/'&#10; +  where None = &lt;bound method Jhansi.project of &lt;project1.Jhansi object at 0x02A222B0&gt;&gt;('https://www.zenclass.in/')&#10; +    where &lt;bound method Jhansi.project of &lt;project1.Jhansi object at 0x02A222B0&gt;&gt; = &lt;project1.Jhansi object at 0x02A222B0&gt;.project&#10; +      where &lt;project1.Jhansi object at 0x02A222B0&gt; = Jhansi()">def test_project():
+        url="https://www.zenclass.in/"
+&gt;       assert Jhansi().project(url)=="https://www.zenclass.in/"
+E       AssertionError: assert None == 'https://www.zenclass.in/'
+E        +  where None = &lt;bound method Jhansi.project of &lt;project1.Jhansi object at 0x02A222B0&gt;&gt;('https://www.zenclass.in/')
+E        +    where &lt;bound method Jhansi.project of &lt;project1.Jhansi object at 0x02A222B0&gt;&gt; = &lt;project1.Jhansi object at 0x02A222B0&gt;.project
+E        +      where &lt;project1.Jhansi object at 0x02A222B0&gt; = Jhansi()
+
+test_project.py:8: AssertionError</failure></testcase></testsuite></testsuites>
