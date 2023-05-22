@@ -1,13 +1,12 @@
+import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.select import Select
-import requests
-import time
+
 
 class jhansi: # created a class 
     url = "https://www.zenclass.in/"
-    soup = requests.get(url)
     driver = webdriver.Firefox()
+    webpage=driver.get(url)
 
     def open_login(self): # method for login 
         username = "jhansi4a1@gmail.com"
@@ -65,7 +64,7 @@ class jhansi: # created a class
             submit_button2.click()
             time.sleep(3)
             count = count + 1 # iteration for the loop
-
+        self.driver.quit()
 s = jhansi() # created an object for the class 
 
 s.inside_query() # calling the method using the class object 
