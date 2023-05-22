@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="1" hostname="user-PC" name="pytest" skipped="0" tests="1" time="12.344" timestamp="2022-05-20T06:48:24.118230"><testcase classname="test_scrapping" name="test_Name_zenclass" time="0.002"><failure message="TypeError: Name_zenclass() takes 1 positional argument but 2 were given">def test_Name_zenclass():
-        name='title'
-&gt;       assert scrapping().Name_zenclass(name)=='Zen Class'
-E       TypeError: Name_zenclass() takes 1 positional argument but 2 were given
-
-test_scrapping.py:7: TypeError</failure></testcase></testsuite></testsuites>
